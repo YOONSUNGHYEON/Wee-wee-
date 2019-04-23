@@ -7,5 +7,5 @@ public class Player : MonoBehaviour
     public float hp;
     
 
-    
+
 }

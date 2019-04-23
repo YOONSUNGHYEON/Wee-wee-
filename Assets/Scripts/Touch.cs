@@ -1,34 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-
-public class Touch : MonoBehaviour//, IPointerDownHandler, IPointerUpHandler
+public class Touch : MonoBehaviour
 {
-    /*private bool isBtnDown = false;
-
-    private void Update()
-    {
-        if (isBtnDown)
-        {
-            Debug.Log(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-        }
+    public void Select()
+    { //카드가 선택되었다면
+        GameManager.Instance.Touch(this);
     }
-
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        isBtnDown = true;
-    }
-
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        isBtnDown = false;
-    }*/
-
-
-
-
-
-
 }
